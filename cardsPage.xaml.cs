@@ -20,29 +20,33 @@ namespace expand
     /// </summary>
     public partial class cardsPage : Page
     {
-        string[] sourses = { "image/apple.jpg", "image/banana.jpg", "image/fruit.jpg", "image/kivi.jpg", "image/pineapple.jpg", "image/melon.jpg", "image/tomato.jpg",
-                             "image/pumpkin.jpg", "image/pea.jpg", "image/lime.jpg", "image/corn.jpg", "image/cherry.jpg", "image/carrot.jpg"};
-        string[] names = { "apple", "banana", "fruit", "kiwi", "pineapple", "melon", "tomato", "pumpkin", "pea", "lime", "corn", "cherry", "carrot"};
-        int number = 1;
-        public cardsPage(string theme)
+        string[] Photos;
+        string[] Names;
+
+        int number = 0;
+        public cardsPage(string[] photo, string[] name)
         {
             InitializeComponent();
 
-            myImage.Source = new BitmapImage(new Uri(sourses[0], UriKind.Relative));
+            this.Photos = photo;
+            this.Names = name;
 
             nextImage.Source = new BitmapImage(new Uri("image/next.png", UriKind.Relative));
             backImage.Source = new BitmapImage(new Uri("image/back.png", UriKind.Relative));
 
-            ImageText.Text = names[0];
+            myImage.Source = new BitmapImage(new Uri(Photos[number], UriKind.Relative)); 
+
+            ImageText.Text = Names[0];
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
             
-            myImage.Source = new BitmapImage(new Uri(sourses[number], UriKind.Relative));
-            ImageText.Text = names[number];
+            
             number++;
-            if (number >= sourses.Length) number = 0;
+            if (number >= Photos.Length) number = 0;
+            myImage.Source = new BitmapImage(new Uri(Photos[number], UriKind.Relative));
+            ImageText.Text = Photos[number];
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

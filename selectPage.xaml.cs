@@ -28,8 +28,8 @@ namespace expand
         "image/animals/hamster.jpg", "image/animals/horse.jpg", "image/animals/mouse.jpg", "image/animals/pig.jpg", "image/animals/sheep.jpg", "image/animals/wolf.jpg"};
         string[] namesAnimals = { "cat", "cow", "dog", "elephant", "fish", "hamster", "horse", "mouse", "pig", "sheep", "wolf"};
 
-        string[] photoFilesFruit = { "image/apple.jpg", "image/banana.jpg", "image/fruit.jpg", "image/kivi.jpg", "image/pineapple.jpg", "image/melon.jpg", "image/tomato.jpg",
-        "image/pumpkin.jpg", "image/pea.jpg", "image/lime.jpg", "image/corn.jpg", "image/cherry.jpg", "image/carrot.jpg" };
+        string[] photoFilesFruit = { "image/fruit/apple.jpg", "image/fruit/banana.jpg", "image/fruit/fruit.jpg", "image/fruit/kivi.jpg", "image/fruit/pineapple.jpg", "image/fruit/melon.jpg", "image/fruit/tomato.jpg",
+        "image/fruit/pumpkin.jpg", "image/fruit/pea.jpg", "image/fruit/lime.jpg", "image/fruit/corn.jpg", "image/fruit/cherry.jpg", "image/fruit/carrot.jpg" };
         string[] namesFruit = { "apple", "banana", "fruit", "kiwi", "pineapple", "melon", "tomato", "pumpkin", "pea", "lime", "corn", "cherry", "carrot" };
 
         string[] photoFilesSchool = { };

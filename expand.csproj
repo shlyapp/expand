@@ -142,7 +142,18 @@
   <ItemGroup>
     <Resource Include="image\back.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="image\animals\cat.jpg" />
+    <Resource Include="image\animals\cow.jpg" />
+    <Resource Include="image\animals\dog.jpg" />
+    <Resource Include="image\animals\elephant.jpg" />
+    <Resource Include="image\animals\fish.jpg" />
+    <Resource Include="image\animals\hamster.jpg" />
+    <Resource Include="image\animals\horse.jpg" />
+    <Resource Include="image\animals\pig.jpg" />
+    <Resource Include="image\animals\sheep.jpg" />
+    <Resource Include="image\animals\wolf.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="image\fruit\apple.jpg" />
     <Resource Include="image\fruit\banana.jpg" />
@@ -157,6 +168,9 @@
     <Resource Include="image\fruit\pineapple.jpg" />
     <Resource Include="image\fruit\pumpkin.jpg" />
     <Resource Include="image\fruit\tomato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\animals\mouse.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

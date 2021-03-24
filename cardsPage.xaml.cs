@@ -51,10 +51,10 @@ namespace expand
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            if (number == 0) number = sourses.Length - 1;
+            if (number == 0) number = Photos.Length - 1;
             else --number;
-            myImage.Source = new BitmapImage(new Uri(sourses[number], UriKind.Relative));
-            ImageText.Text = names[number];
+            myImage.Source = new BitmapImage(new Uri(Photos[number], UriKind.Relative));
+            ImageText.Text = Names[number];
         }
     }
 }

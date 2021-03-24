@@ -46,7 +46,7 @@ namespace expand
             number++;
             if (number >= Photos.Length) number = 0;
             myImage.Source = new BitmapImage(new Uri(Photos[number], UriKind.Relative));
-            ImageText.Text = Photos[number];
+            ImageText.Text = Names[number];
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

@@ -46,7 +46,7 @@ namespace expand
 
         private void animals_Click(object sender, RoutedEventArgs e)
         {
-            if (nextpage == "cards") NavigationService.Navigate(new cardsPage("animals"));
+            if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesAnimals, namesAnimals));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesAnimals, namesAnimals));
             if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("animals"));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("animals"));
@@ -54,7 +54,7 @@ namespace expand
 
         private void fruit_Click(object sender, RoutedEventArgs e)
         {
-            if (nextpage == "cards") NavigationService.Navigate(new cardsPage("fruit"));
+            if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesFruit, namesFruit));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesFruit, namesFruit));
             if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("fruit"));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("fruit"));
@@ -62,7 +62,7 @@ namespace expand
 
         private void school_Click(object sender, RoutedEventArgs e)
         {
-            if (nextpage == "cards") NavigationService.Navigate(new cardsPage("school"));
+            if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesSchool, namesSchool));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesSchool, namesSchool));
             if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("school"));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("school"));
@@ -70,7 +70,7 @@ namespace expand
 
         private void music_Click(object sender, RoutedEventArgs e)
         {
-            if (nextpage == "cards") NavigationService.Navigate(new cardsPage("music"));
+            if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesMusic, namesMusic));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesMusic, namesMusic));
             if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("music"));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("music"));

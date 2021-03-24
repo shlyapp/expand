@@ -20,9 +20,32 @@ namespace expand
     /// </summary>
     public partial class trueOrFalsePage : Page
     {
-        public trueOrFalsePage(string theme)
+        public string[] Photos { get; set; }
+
+        public string[] Names { get; set; }
+
+        int number = 1;
+
+        public trueOrFalsePage(string[] photo, string[] names)
         {
             InitializeComponent();
+            this.Photos = photo;
+            this.Names = names;
+
+            image.Source = new BitmapImage(new Uri(Photos[0], UriKind.Relative));
+            text.Text = "this is " + Names[0] + " ?";
+        }
+
+        private void false_Click(object sender, RoutedEventArgs e)
+        {
+            image.Source = new BitmapImage(new Uri(Photos[number], UriKind.Relative));
+            text.Text = "this is " + Names[number] + " ?";
+            number++;
+        }
+
+        private void true_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

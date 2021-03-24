@@ -48,7 +48,7 @@ namespace expand
         {
             if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesAnimals, namesAnimals));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesAnimals, namesAnimals));
-            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("animals"));
+            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage(photoFilesAnimals, namesAnimals));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("animals"));
         }
 
@@ -56,7 +56,7 @@ namespace expand
         {
             if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesFruit, namesFruit));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesFruit, namesFruit));
-            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("fruit"));
+            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage(photoFilesFruit, namesFruit));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("fruit"));
         }
 
@@ -64,7 +64,7 @@ namespace expand
         {
             if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesSchool, namesSchool));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesSchool, namesSchool));
-            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("school"));
+            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage(photoFilesSchool, namesSchool));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("school"));
         }
 
@@ -72,7 +72,7 @@ namespace expand
         {
             if (nextpage == "cards") NavigationService.Navigate(new cardsPage(photoFilesMusic, namesMusic));
             if (nextpage == "translate") NavigationService.Navigate(new translatePage(photoFilesMusic, namesMusic));
-            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage("music"));
+            if (nextpage == "trueOrFalse") NavigationService.Navigate(new trueOrFalsePage(photoFilesMusic, namesMusic));
             if (nextpage == "putACouple") NavigationService.Navigate(new putACouplePage("music"));
         }
     }

@@ -32,38 +32,77 @@
 
         <TextBlock
             Grid.Row="0"
-            Grid.Column="1"
-            Grid.ColumnSpan="5"
+            Grid.ColumnSpan="7"
             
-            Text="TRUE OR"
-            FontSize="110"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            FontWeight="Bold"
-            FontFamily="Verdana"
-            Foreground="#3A4E6B"
-        />
-
-        <TextBlock
-            Grid.Row="1"
-            Grid.Column="2"
-            Grid.ColumnSpan="4"
-            
-            Text ="FALSE"
-             FontSize="110"
+            Text="TRUE OR FALSE"
+            FontSize="90"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontWeight="Bold"
             FontFamily="Verdana"
-            Foreground="#3A4E6B"
+            Foreground="#3A4E6B" Margin="10,-23,0,65" Grid.RowSpan="2"
         />
 
         <Image
             x:Name="image"
             Grid.Row="2"
-            Grid.RowSpan="3"
+            Grid.RowSpan="4"
             Grid.Column="1"
             Grid.ColumnSpan="5"
+            Margin="20"
         />
+
+        <TextBlock
+            x:Name="text"
+            Grid.Row="1"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="5"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            
+            FontSize="60"
+            FontWeight="Bold"
+            Background="#7FAAEB"
+            Foreground="#C8D7EE"
+            Padding="20"
+            
+         />
+
+        <Button
+            x:Name="false"
+            Click="false_Click"
+            
+            Grid.Row="6"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Background="#7FAAEB">
+            <TextBlock
+                 Text="FALSE"
+                Foreground="#C8D7EE"
+                FontSize="35"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontWeight="Bold"
+            />
+        </Button>
+
+        <Button
+            x:Name="true"
+            Click="true_Click"
+            
+            Grid.Row="6"
+            Grid.Column="4"
+            Grid.ColumnSpan="2"
+            Background="#7FAAEB">
+            <TextBlock
+                Text="TRUE"
+                Foreground="#C8D7EE"
+                FontSize="35"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontWeight="Bold"
+            />
+        </Button>
     </Grid>
 </Page>
